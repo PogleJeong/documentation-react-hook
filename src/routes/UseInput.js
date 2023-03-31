@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { NaviUseState } from "../components/Navi";
+import "../styles/common.css";
 
 const useInput = (initialValue, validator) => {
     const [value, setValue] = useState(initialValue);
@@ -29,8 +31,11 @@ function UseInput() {
     return(
         <div>
             <h1>useInput page</h1>
-            <input {...name} placeholder="Name" />
-            <input {...age} placeholder="age" />
+            <NaviUseState />
+            <label for="name" >Name : max 20 string</label><br/>
+            <input id="name" {...name} placeholder="Name" /><br/>
+            <label for="age">Age : only number</label><br/>
+            <input id="age" {...age} placeholder="age" />
         </div>
     );
     // {...name} => { value={value} onChange={onChange} } 를 압축한 문법

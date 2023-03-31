@@ -1,4 +1,4 @@
-import Navi from "../components/Navi";
+import { Navi } from "../components/Navi";
 
 function Home() {
     return (

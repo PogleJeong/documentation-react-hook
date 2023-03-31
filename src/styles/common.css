@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+    padding: 100px;
+    height: 1000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+label {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+input {
+    padding-left: 5px;
+    width: 200px;
+    height: 20px;
+    border: 2px gray soild;
+    border-radius: 10px;
+}

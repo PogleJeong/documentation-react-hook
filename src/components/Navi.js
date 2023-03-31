@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Navi() {
+export const Navi = () => {
     return (
         <nav>
             <ul>
@@ -12,4 +12,23 @@ function Navi() {
     );
 };
 
-export default Navi;
+export const NaviUseState = () => {
+    return (
+        <nav>
+            <ul>
+                <li><Link to="/useState/useInput" >useInput</Link></li>
+                <li><Link to="/useState/useTabs">useTabs</Link></li>
+            </ul>
+        </nav>
+    );
+}
+
+export const NaviUseEffect = () => {
+    return (
+        <nav>
+            <ul>
+                <li><Link to="/useEffect/useClick">useClick</Link></li>
+            </ul>
+        </nav>
+    )
+}

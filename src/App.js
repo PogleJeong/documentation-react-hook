@@ -4,6 +4,7 @@ import UseEffect from "./routes/UseEffect";
 import UseInput from "./routes/UseInput";
 import UseState from "./routes/UseState";
 import UseTabs from "./routes/UseTabs";
+import UseClick from "./routes/UseClick";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Route path="/useState" element={<UseState />} />
         <Route path="/useEffect" element={<UseEffect />} />
         <Route path="/useState/useInput" element={<UseInput />} />
-        <Route path="/useTabs" element={<UseTabs />} />
+        <Route path="/useState/useTabs" element={<UseTabs />} />
+        <Route path="/useEffect/useClick" element={<UseClick />} />
       </Routes>
     </BrowserRouter>
   );

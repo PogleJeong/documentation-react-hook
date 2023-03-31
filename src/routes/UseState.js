@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
-import Navi from "../components/Navi";
-
+import { Navi, NaviUseState } from "../components/Navi";
+import "../styles/common.css";
 
 function UseState() {
     return(
         <div>
             <Navi />
-            <Link to="useInput">++ useInput</Link>
+            <NaviUseState />
         </div>
     );
 };
