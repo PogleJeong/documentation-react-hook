@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { NaviUseState } from "../components/Navi";
 import "../styles/common.css";
 
@@ -35,6 +36,7 @@ function UseTabs() {
     return (
         <div>
             <h1>useTabs</h1>
+            <Link to="/useState">&larr; UseState Home</Link>
             <NaviUseState />
             {content.map((section, index )=> (
             <button onClick={()=> changeItem(index)}>{section.tab}</button>

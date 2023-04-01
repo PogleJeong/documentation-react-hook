@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { NaviUseState } from "../components/Navi";
 import "../styles/common.css";
 
@@ -31,6 +32,7 @@ function UseInput() {
     return(
         <div>
             <h1>useInput page</h1>
+            <Link to="/useState">&larr; UseState Home</Link>
             <NaviUseState />
             <label for="name" >Name : max 20 string</label><br/>
             <input id="name" {...name} placeholder="Name" /><br/>

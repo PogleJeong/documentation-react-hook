@@ -5,6 +5,8 @@ import UseInput from "./routes/UseInput";
 import UseState from "./routes/UseState";
 import UseTabs from "./routes/UseTabs";
 import UseClick from "./routes/UseClick";
+import UseConfirm from "./routes/UseConfirm";
+import UsePreventLeave from "./routes/UsePreventLeave";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/useState/useInput" element={<UseInput />} />
         <Route path="/useState/useTabs" element={<UseTabs />} />
         <Route path="/useEffect/useClick" element={<UseClick />} />
+        <Route path="/useEffect/useConfirm" element={<UseConfirm />} />
+        <Route path="/useEffect/usePreventLeave" element={<UsePreventLeave />} />
       </Routes>
     </BrowserRouter>
   );

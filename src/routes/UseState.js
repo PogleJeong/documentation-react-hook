@@ -5,6 +5,7 @@ function UseState() {
     return(
         <div>
             <Navi />
+            <hr/>
             <NaviUseState />
         </div>
     );

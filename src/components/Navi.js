@@ -28,6 +28,8 @@ export const NaviUseEffect = () => {
         <nav>
             <ul>
                 <li><Link to="/useEffect/useClick">useClick</Link></li>
+                <li><Link to="/useEffect/useConfirm">useConfirm</Link></li>
+                <li><Link to="/useEffect/usePreventLeave">usePreventLeave</Link></li>
             </ul>
         </nav>
     )
