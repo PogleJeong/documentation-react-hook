@@ -7,6 +7,7 @@ import UseTabs from "./routes/UseTabs";
 import UseClick from "./routes/UseClick";
 import UseConfirm from "./routes/UseConfirm";
 import UsePreventLeave from "./routes/UsePreventLeave";
+import UseFadeIn from "./routes/UseFadeIn";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/useEffect/useClick" element={<UseClick />} />
         <Route path="/useEffect/useConfirm" element={<UseConfirm />} />
         <Route path="/useEffect/usePreventLeave" element={<UsePreventLeave />} />
+        <Route path="/useEffect/useFadeIn" element={<UseFadeIn />} />
       </Routes>
     </BrowserRouter>
   );
