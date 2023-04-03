@@ -8,6 +8,8 @@ import UseClick from "./routes/UseClick";
 import UseConfirm from "./routes/UseConfirm";
 import UsePreventLeave from "./routes/UsePreventLeave";
 import UseFadeIn from "./routes/UseFadeIn";
+import UseNetwork from "./routes/useNetwork";
+import UseScroll from "./routes/UseScroll";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/useEffect/useConfirm" element={<UseConfirm />} />
         <Route path="/useEffect/usePreventLeave" element={<UsePreventLeave />} />
         <Route path="/useEffect/useFadeIn" element={<UseFadeIn />} />
+        <Route path="/useEffect/useNetwork" element={<UseNetwork />} />
+        <Route path="/useEffect/useScroll" element={<UseScroll />} />
       </Routes>
     </BrowserRouter>
   );

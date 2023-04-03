@@ -4,8 +4,8 @@ import { Navi, NaviUseEffect } from "../components/Navi";
 const useFadeIn = (duration = 1, deray = 0) => {
     const ref = useRef();
     
-    useEffect(() => {
-        const element = ref;
+    useEffect(() => { // useEffect 는 html이 모두 랜더링 된 다음에 실행되므로 ref , style: opacity: 0이 적용된 이후 변경된다.
+        const element = ref; // 사용하고자 하는 useReft는 꼭 copy 해서 쓰기.
         if (typeof duration !== "number" || typeof deray !== "number") {
             return;
         }
