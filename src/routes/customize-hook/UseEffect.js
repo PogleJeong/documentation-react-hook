@@ -1,4 +1,4 @@
-import { Navi, NaviUseEffect } from "../components/Navi";
+import { Navi, NaviUseEffect } from "../../components/Navi";
 import { Link } from "react-router-dom";
 function UseEffect() {
     return(

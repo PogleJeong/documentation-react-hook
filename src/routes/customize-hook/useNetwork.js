@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Navi, NaviUseEffect } from "../components/Navi";
+import { Navi, NaviUseEffect } from "../../components/Navi";
 
 const useNetwork = (onChange) => {
     const [status, setStatus] = useState(navigator.onLine);

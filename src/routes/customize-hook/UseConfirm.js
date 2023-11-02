@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/common.css";
-import { NaviUseEffect } from "../components/Navi";
+import { NaviUseEffect } from "../../components/Navi";
 
 // useConfirm 은 입력시 한번 더 확인하는 메세지
 // usePreventLeave 는

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Navi, NaviUseEffect } from "../components/Navi";
+import { Navi, NaviUseEffect } from "../../components/Navi";
 
 // 스크롤 위치에 따라 요소의 style 이 바뀜.
+// 스크롤에 대한 이벤트는 따로 설정해야한다.
+
 const useScroll = () => {
     const [state, setState] = useState({
         x: 0,

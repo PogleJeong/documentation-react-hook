@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { NaviUseState } from "../components/Navi";
+import { NaviUseState } from "../../components/Navi";
 import "../styles/common.css";
 
-const useInput = (initialValue, validator) => {
+const useInput = (initialValue, validator, valid) => {
     const [value, setValue] = useState(initialValue);
     const onChange = (event) => {
         const {
@@ -13,7 +13,7 @@ const useInput = (initialValue, validator) => {
         
         let willUpdate = true;
         if (typeof validator === "function") {
-            willUpdate = validator(value);
+            willUpdate = validator(value, valid);
         }
         if (willUpdate) {
             setValue(value);
@@ -23,7 +23,7 @@ const useInput = (initialValue, validator) => {
 }
 
 function UseInput() {
-    const maxLen = (value) => value.length < 10; // 유효성검사 ()
+    const maxLen = (value, max) => value.length < max; // 유효성검사 ()
     const onlyNumber = (value) => isNaN(Number(value)) ? false : true; // 숫자이외의 문자열이 들어가면 출력X
     
     const name = useInput("Mr.Kim", maxLen); // { value , onChange } 

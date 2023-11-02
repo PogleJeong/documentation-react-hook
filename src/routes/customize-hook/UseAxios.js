@@ -5,15 +5,19 @@ import { useState } from "react";
 
 // axios 는 custom instance 만드는 것을 허용함.
 const useAxios = (options, axiosInstance = defaultAxios ) => {
-    const [state, setState] = useStatete({
+    const [state, setState] = useState({
         loading: true,
         error: null,
         data: null
     })
+
     const [trigger, setTrigger] = useState(0);
+
+    
     if(!options.url) {
         return;
     }
+
     const refetch = () => {
         setState({
             ...state,
@@ -21,6 +25,7 @@ const useAxios = (options, axiosInstance = defaultAxios ) => {
         });
         setTrigger(Date.now());
     }
+
     useEffect(()=> {
         axiosInstance(options).then(data => {
             setState({
@@ -32,6 +37,7 @@ const useAxios = (options, axiosInstance = defaultAxios ) => {
             setState({...state, loading: false, error})
         });
     },[trigger]) //recetch 를 위한 dependency
+
     return {...state, refetch};
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { NaviUseState } from "../components/Navi";
+import { NaviUseState } from "../../components/Navi";
 import "../styles/common.css";
 
 const content = [
@@ -31,14 +31,16 @@ const useTabs = (initialTab, allTabs) => {
 };
 
 function UseTabs() {
+
     const { currentItem, changeItem } = useTabs(0, content);
+
     // 초기값은 allTabs[0] => content[0]
     return (
         <div>
             <h1>useTabs</h1>
             <Link to="/useState">&larr; UseState Home</Link>
             <NaviUseState />
-            {content.map((section, index )=> (
+            {content.map((section, index ) => (
             <button onClick={()=> changeItem(index)}>{section.tab}</button>
             ))}
             <div>

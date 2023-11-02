@@ -1,4 +1,4 @@
-import { Navi, NaviUseState } from "../components/Navi";
+import { Navi, NaviUseState } from "../../components/Navi";
 import "../styles/common.css";
 
 function UseState() {

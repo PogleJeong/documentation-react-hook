@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { NaviUseEffect } from "../components/Navi";
+import { NaviUseEffect } from "../../components/Navi";
 
 const useClick = (onClick) => {
     const ref = useRef();
@@ -27,6 +27,7 @@ const UseClick = () => {
     const sayHello = () => {
         console.log("say hello ~");
     }
+    
     const title = useClick(sayHello);
     return (
         <div>
