@@ -1,4 +1,4 @@
-useEfffect  
+useEffect  
 ======
 
 [React 공식문서](https://react.dev/reference/react/useEffect)
